@@ -29,7 +29,7 @@
 let blob = undefined;
 document.querySelectorAll("main > div").forEach(b => b.addEventListener("click", _ => {b.classList.add("popped"); b.innerHTML = '<div>*pop*</div>'; !blob ? null : new Audio(blob).play();}));
 var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'AUDIO_FILE.mp3', true);
+    xhr.open('GET', 'pop.mp3', true);
     xhr.responseType = 'blob'; //important
     xhr.onload = function(e) {
         if (this.status == 200) {
